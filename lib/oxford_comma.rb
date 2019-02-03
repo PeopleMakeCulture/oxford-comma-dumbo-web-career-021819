@@ -10,6 +10,7 @@ def oxford_comma(array)
     #commas = array[0..(array.length()-2)].collect { |f| f + ", " }
     array[-1] = ("and " + array[-1])
     return array.join(", ")
+    
   end
 
 end
