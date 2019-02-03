@@ -8,7 +8,8 @@ def oxford_comma(array)
 
   elsif array.length() > 2
     #commas = array[0..(array.length()-2)].collect { |f| f + ", " }
-    return array[0..(array.length()-2)].join(", ") + "and " + array[-1]
+    array[-1] = ("and " + array[-1])
+    array =  array.join(", ")
   end
 
 end
